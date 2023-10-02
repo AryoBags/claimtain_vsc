@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="img/logo2.png" alt="Logo">
+            </div>
+            <ul class="nav">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin.html">Track</a></li>
+                <li><a href="aabout.html">About</a></li>
+                <li><a href="arekomen.html">Rekomendasi</a></li>
+                <li><a href="afoter.html">Footer</a></li>
+              
+            </ul>
+            </ul>
+        </aside>
+        <main class="content">
+            <header class="header">
+                <h1 class="title">Dashboard</h1> <!-- Judul sebagai ganti search -->
+                <div class="user-profile">
+                    <img src="img/rekom.jpg" alt="User Avatar">
+                    <span style="color: #fff;">Admin</span>
+                </div>
+            </header>
+            <section class="main-content">
+                <h2>Data About</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Paragarf 1</th>
+                            <th>Paragraf 2</th>
+                            <th>Gambar</th>
+                            <th  style="text-align: center;">Actions</th> <!-- Menambahkan kolom "Actions" -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-about"  >
+                                Lorem ipsum dolor sit amet, consectetur a
+                                dipiscing elit. Vivamus eam uismod libero nec elit bibendum fermentum. Nunc eu aliquam lorem, at mollis nisl. Vestibulum ut bibendum quam. Nullam nec quam nec leo posuere consectetur.
+                                Proin tincidunt eros nesum dolor sit amet, consectetur adipiscing elit. Vivamus euismod libero nec elit bibendum fermentum. Nunc eu aliquam lorem, at mollis nisl. Vestibulum ut bibendum quam. Nullam nec quam nec leo posuere consectetur.
+                                Proin tincidunt eros necc ditempus, a euismod felis vehicula. Curabitur eget scelerisque sapien. Aenean dapibus, quam id dignissim bibendum, odio velit vehicula ex, ac tincidunt nisl est ut urna.</td>
+                            <td class="td-about" >
+                                dolor sit amet, consectetur adipiscing elit. Vivamus euismod libero nec elit bibendum fermentum. Nunc eu aliquam lorem, at mollis nisl. Vestibulum ut bibendum quam. Nullam nec quam nec leo posuere consectetur.
+                                Proin tincidunt eros necc di</td>
+                            <td>....</td>
+                            <td style="text-align: center;">
+                                <a href="eabout.html" class="edit-button-about">Edit</a>
+                                <!-- <button class="delete-button">Delete</button> -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <!-- <button id="prevButton"></button> -->
+                    <div id="pageNumbers" class="page-numbers">
+                        <!-- Angka halaman akan ditambahkan melalui JavaScript -->
+                    </div>
+                    <!-- <button id="nextButton"></button> -->
+                </div>
+                
+            </section>
+            
+            
+        </main>
+    </div>
+    
+</body>
+<footer class="footer">
+        <p>&copy; 2023 climtain</p>
+    </footer>
+    <script src="admin.js"></script>
+</html>

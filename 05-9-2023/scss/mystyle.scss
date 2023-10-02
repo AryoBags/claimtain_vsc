@@ -1,0 +1,109 @@
+@use 'mixin' as m;
+
+$mycolor:#A7D129;
+$color-background:#323023;
+$color-topbot:#2E2E20;
+$text-color:#b8b6b6;
+$button-dark:#616F39;
+$color_second:#3E432E;
+$color-input:#545b3e;
+$buuton-light:#a7d129a0;
+$text-input: #cbcbcb;
+$font-big:64px;
+$font-sb:32px;$font-xm:24px;
+$font-med:16px;
+$fot-mm:14px;
+$fot-sm:13px;
+
+main{
+    background-color: $color-background;
+}
+
+// nesting
+nav ul{
+    list-style: none;
+    display: flex;
+    padding-right: 40px;
+    
+    li{
+        margin-right: 30px; 
+        
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+   
+}
+
+// Parent Selector
+.textbox{
+
+    .main &{
+        border: solid red thin;
+    }
+
+    position: absolute;
+    top: 50%;
+    right: -260px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: right;
+    max-width: 600px;
+
+    p, h2, span{
+        color: $button-dark;
+    }
+
+}
+.about{
+    &-content{
+        // variabel global
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 50px;
+        background-color: $text-input;
+    }
+}
+.recommended{
+    &-section{
+        p{
+            color:$text-input;
+        }
+    }
+}
+
+// MAP
+$alert:(
+    'danger':red,
+    'success':green,
+    'warning':orange,
+);
+h1{
+    color: map-get($alert, 'danger');
+}
+
+// mixin
+
+// simplemixin
+
+.header ul{
+    @include m.inline-list();
+}
+
+//arguments mixin
+
+
+.container{
+    @include m.flex-box( row-reverse,space-between);
+    width: 600px;
+    height: 400px;
+    background-color: $button-dark;
+
+    .box{
+        width: 50px;
+        height: 60px;
+        background-color:$color-background;
+    }
+}

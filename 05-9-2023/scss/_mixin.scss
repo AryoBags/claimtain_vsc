@@ -1,0 +1,15 @@
+@mixin inline-list{
+ margin: o;
+ padding: o;
+ list-style: 0;
+    li{
+    display: block;
+    }
+
+}
+@mixin flex-box($direction: row, $space:center){
+    display: flex;
+    justify-content: $space;
+    align-items: center;
+    flex-direction: $direction;
+   }

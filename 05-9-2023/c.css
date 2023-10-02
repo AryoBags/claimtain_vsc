@@ -1,0 +1,65 @@
+/* CSS untuk tampilan form */
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.data-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+select {
+    height: 40px;
+}
+
+.button-container {
+    text-align: right;
+}
+
+.save-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}

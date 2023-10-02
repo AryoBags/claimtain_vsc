@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="img/logo2.png" alt="Logo">
+            </div>
+            <ul class="nav">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin.html">Track</a></li>
+                <li><a href="aabout.html">About</a></li>
+                <li><a href="arekomen.html">Rekomendasi</a></li>
+                <li><a href="afoter.html">Footer</a></li>
+              
+            </ul>
+        </aside>
+        <main class="content">
+            <header class="header">
+                <h1 class="title">Dashboard</h1> <!-- Judul sebagai ganti search -->
+                <div class="user-profile">
+                    <img src="img/rekom.jpg" alt="User Avatar">
+                    <span style="color: #fff;">Admin</span>
+                </div>
+            </header>
+          
+            <section class="main-content-create">
+                <h2>Create New Rekomendasi</h2>
+                <form class="data-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter track name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="daerah">Daerah</label>
+                        <input type="text" id="daerah" name="daerah" placeholder="Enter daerah" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kesulitan">Kesulitan</label>
+                        <select id="kesulitan" name="kesulitan" required>
+                            <option value="Pemula">Pemula</option>
+                            <option value="Menengah">Menengah</option>
+                            <option value="Tingkat Lanjut">Tingkat Lanjut</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gambar">Gambar</label>
+                        <input type="file" id="gambar" name="gambar" accept="image/*">
+                    </div>
+                    <!-- Tambahan elemen-elemen form sesuai kebutuhan Anda -->
+                    <div class="form-group">
+                        <label for="detail">Detail</label>
+                        <textarea id="detail" name="detail" placeholder="Enter track details"></textarea>
+                    </div>
+                    <div class="button-container">
+                        <button class="save-button">Save</button>
+                <a href="admin.html" class="back-button">Back</a>
+
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    
+</body>
+<footer class="footer">
+    <p>&copy; 2023 climtain</p>
+    </footer>
+</html>

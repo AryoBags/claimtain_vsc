@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="img/logo2.png" alt="Logo">
+            </div>
+            <ul class="nav">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin.html">Track</a></li>
+                <li><a href="aabout.html">About</a></li>
+                <li><a href="arekomen.html">Rekomendasi</a></li>
+                <li><a href="afoter.html">Footer</a></li>
+              
+            </ul>
+        </aside>
+        <main class="content">
+            <header class="header">
+                <h1 class="title">Dashboard</h1> <!-- Judul sebagai ganti search -->
+                <div class="user-profile">
+                    <img src="img/rekom.jpg" alt="User Avatar">
+                    <span style="color: #fff;">Admin</span>
+                </div>
+            </header>
+            <section class="main-content">
+                <h2>Data Footer</h2>
+                <div class="button-container">
+                    <a href="create.html" class="add-button">Add New</a>
+                </div>
+                <!-- <div class="search-filter">
+                    <input type="text" id="searchInput" placeholder="Search by Name">
+                    <button id="searchButton">Search</button>
+                    <select id="filterDropdown">
+                        <option value=""> Filter Daerah</option>
+                        <option value="jawa timur">Jawa Timur</option>
+                        <option value="jawa barat">Jawa Barat</option>
+                        <option value="jawa tengah">Jawa Tengah</option>
+                        
+                    </select>
+                    
+                </div> -->
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>logo</th>
+                            <th>link</th>
+                            <th  style="text-align: center;">Actions</th> <!-- Menambahkan kolom "Actions" -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>facebook</td>
+                            <td>....</td>
+                            <td>....</td>
+                            <td style="text-align: center;">
+                                <a href="efoter.html" class="edit-button">Edit</a>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>whatsapp</td>
+                            <td>....</td>
+                            <td>....</td>
+                            <td style="text-align: center;">
+                                <a href="efoter.html" class="edit-button">Edit</a>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>instagram</td>
+                            <td>....</td>
+                            <td>....</td>
+                            <td style="text-align: center;">
+                                <a href="efoter.html" class="edit-button">Edit</a>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Linkedin</td>
+                            <td>....</td>
+                            <td>....</td>
+                            <td style="text-align: center;">
+                                <a href="efoter.html" class="edit-button">Edit</a>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <!-- <div class="pagination"> -->
+                    <!-- <button id="prevButton"></button> -->
+                    <!-- <div id="pageNumbers" class="page-numbers"> -->
+                        <!-- Angka halaman akan ditambahkan melalui JavaScript -->
+                    <!-- </div> -->
+                    <!-- <button id="nextButton"></button> -->
+                <!-- </div> -->
+                
+            </section>
+            
+            
+        </main>
+    </div>
+    
+</body>
+<footer class="footer">
+        <p>&copy; 2023 climtain</p>
+    </footer>
+    <script src="admin.js"></script>
+</html>
